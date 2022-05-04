@@ -8,7 +8,7 @@ public class ForceBall : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        GetComponent<Rigidbody>().AddForce(Vector3.right * multiplier);
+        GetComponent<Rigidbody>().AddForce(transform.right * (multiplier + Random.value * multiplier));
     }
 
     // Update is called once per frame
